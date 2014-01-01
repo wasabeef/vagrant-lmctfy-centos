@@ -10,7 +10,7 @@ set -o verbose
 #
 sudo yum update -y
 sudo rpm -Uvh http://mirror.centos.org/centos/6.5/centosplus/x86_64/Packages/kernel-devel-2.6.32-431.1.2.el6.centos.plus.x86_64.rpm
-sudo yum groupinstall "Development Tools"
+sudo yum groupinstall -y "Development Tools"
 
 #
 ## Protocol Buffers (protobuf) Install
@@ -27,7 +27,7 @@ tar zxvf gflags-2.0-no-svn-files.tar.gz
 pushd gflags-2.0
   ./configure && make && make install
 popd
-rm -rf gflags-2.0/
+rm -rf gflags-2.0/ gflags-2.0-no-svn-files.tar.gz
 
 #
 ## RE2 (re2) Install
@@ -38,7 +38,7 @@ tar zxvf re2-20131024.tgz
 pushd re2
   make && make install
 popd
-rm -rf re2/
+rm -rf re2/ re2-20131024.tgz
 
 echo /usr/local/lib >> /etc/ld.so.conf
 ldconfig
@@ -73,4 +73,13 @@ rm -rf lmctfy
 yum install -y libcgroup
 service cgconfig start
 chkconfig cgconfig on
+
+
+echo "###########################################"
+echo "Finished Vagrant up..."
+echo "Let's Enjoy lmctfy"
+echo "                     @wasabeef_jp"
+echo "                     thank you"
+echo "###########################################"
+
 
