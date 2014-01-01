@@ -74,7 +74,7 @@ yum install -y libcgroup
 service cgconfig start
 chkconfig cgconfig on
 
-
+echo;echo;echo
 echo "###########################################"
 echo "Finished Vagrant up..."
 echo "Let's Enjoy lmctfy"
