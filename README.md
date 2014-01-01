@@ -1,8 +1,6 @@
-# Vagrant lmctfy
+# Vagrant lmctfy CentOS
 
-[lmctfy](https://github.com/google/lmctfy) Vagrantfile and setup script.
-
-Based on [vagrant-lmctfy](https://github.com/sboneyard/vagrant-lmctfy) by [silas](https://github.com/silas).
+[lmctfy](https://github.com/google/lmctfy) Vagrantfile and setup script. Based on [vagrant-lmctfy](https://github.com/sboneyard/vagrant-lmctfy) by [silas](https://github.com/silas).
 
 ## Usage
 
